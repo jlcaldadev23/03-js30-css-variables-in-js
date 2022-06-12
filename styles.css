@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+  --gray: red;
+} */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* TYPOGRAPHY */
+
+.section-tg {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.tg-output-box {
+  --text_color: #555;
+  --font_family: "Arial";
+}
+
+.output-text {
+  padding: 1.6rem;
+  color: var(--text-color);
+  font-family: var(--font_family);
+}
