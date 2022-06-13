@@ -20,16 +20,71 @@ body {
 
 .section-tg {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 35fr 65fr;
+}
+.tg-fonts legend {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.font label {
+  font-size: 1.8rem;
+}
+
+.font label[for="Inter"] {
+  font-family: "Inter", sans-serif;
+}
+
+.font label[for="Lato"] {
+  font-family: "Lato", sans-serif;
+}
+
+.font label[for="Nunito"] {
+  font-family: "Nunito", sans-serif;
+}
+
+.font label[for="Open Sans"] {
+  font-family: "Open Sans", sans-serif;
+}
+
+.font label[for="Roboto"] {
+  font-family: "Roboto", sans-serif;
+}
+
+.font label[for="Bitter"] {
+  font-family: "Bitter", serif;
+}
+
+.font label[for="Cormorant Garamond"] {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font label[for="Merriweather"] {
+  font-family: "Merriweather", serif;
+}
+
+.font label[for="Source Serif Pro"] {
+  font-family: "Source Serif Pro", serif;
+}
+
+.font label[for="Zilla Slab"] {
+  font-family: "Zilla Slab", serif;
 }
 
 .tg-output-box {
   --text_color: #555;
   --font_family: "Arial";
+  --font_size: 1.8rem;
+  --font_weight: 400;
+  --bg_color: #fff;
 }
 
 .output-text {
   padding: 1.6rem;
   color: var(--text-color);
   font-family: var(--font_family);
+  font-size: var(--font_size);
+  font-weight: var(--font_weight);
+  color: var(--text_color);
+  background-color: var(--bg_color);
 }

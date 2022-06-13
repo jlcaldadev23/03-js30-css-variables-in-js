@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lato:wght@300;400;700&family=Nunito:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&family=Source+Serif+Pro:wght@300;400;600;700&family=Zilla+Slab:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
@@ -29,67 +29,168 @@
     </header>
     <section class="section-tg">
       <div class="tg-input-box">
-        <fieldset class="tg-sans-serif-fonts">
-          <!-- Inter
-            Lato
-            Nunito
-            Open Sans
-            Roboto -->
-          <legend>san serif fonts</legend>
-          <div class="sans-serif-font">
+        <fieldset class="tg-fonts">
+          <legend>sans-serif fonts</legend>
+          <div class="font">
             <input
               type="radio"
-              name="sans-serif-font"
+              name="font"
               id="Inter"
               value="Inter"
-              data-font-family="Inter"
+              data-type="font_family"
               checked
             />
             <label for="Inter">Inter</label>
           </div>
-
-          <div class="sans-serif-font">
+          <div class="font">
             <input
               type="radio"
-              name="sans-serif-font"
+              name="font"
               id="Lato"
               value="Lato"
-              data-font-family="Inter"
+              data-type="font_family"
             />
             <label for="Lato">Lato</label>
           </div>
-
-          <div class="sans-serif-font">
+          <div class="font">
             <input
               type="radio"
-              name="sans-serif-font"
+              name="font"
               id="Nunito"
               value="Nunito"
-              data-font-family="Nunito"
+              data-type="font_family"
             />
             <label for="Nunito">Nunito</label>
           </div>
-          <div class="sans-serif-font">
+          <div class="font">
             <input
               type="radio"
-              name="sans-serif-font"
+              name="font"
               id="Open Sans"
               value="Open Sans"
-              data-font-family="Open Sans"
+              data-type="font_family"
             />
             <label for="Open Sans">Open Sans</label>
           </div>
-          <div class="sans-serif-font">
+          <div class="font">
             <input
               type="radio"
-              name="sans-serif-font"
+              name="font"
               id="Roboto"
               value="Roboto"
-              data-font-family="Roboto"
+              data-type="font_family"
             />
             <label for="Roboto">Roboto</label>
           </div>
+
+          <legend>serif fonts</legend>
+          <div class="font">
+            <input
+              type="radio"
+              name="font"
+              id="Bitter"
+              value="Bitter"
+              data-type="font_family"
+            />
+            <label for="Bitter">Bitter</label>
+          </div>
+          <div class="font">
+            <input
+              type="radio"
+              name="font"
+              id="Cormorant Garamond"
+              value="Cormorant Garamond"
+              data-type="font_family"
+            />
+            <label for="Cormorant Garamond">Cormorant Garamond</label>
+          </div>
+          <div class="font">
+            <input
+              type="radio"
+              name="font"
+              id="Merriweather"
+              value="Merriweather"
+              data-type="font_family"
+            />
+            <label for="Merriweather">Merriweather</label>
+          </div>
+          <div class="font">
+            <input
+              type="radio"
+              name="font"
+              id="Source Serif Pro"
+              value="Source Serif Pro"
+              data-type="font_family"
+            />
+            <label for="Source Serif Pro">Source Serif Pro</label>
+          </div>
+          <div class="font">
+            <input
+              type="radio"
+              name="font"
+              id="Zilla Slab"
+              value="Zilla Slab"
+              data-type="font_family"
+            />
+            <label for="Zilla Slab">Zilla Slab</label>
+          </div>
         </fieldset>
+        <div>
+          <input
+            name="font-size"
+            id="font-size"
+            type="range"
+            min="8"
+            max="96"
+            step="4"
+            data-unit="px"
+            data-type="font_size"
+            oninput="updateBackground(this)"
+          />
+          <label for="font-size">Font size</label>
+        </div>
+        <div>
+          <input
+            name="font-weight"
+            id="font-weight"
+            type="range"
+            min="300"
+            max="700"
+            step="100"
+            data-type="font_weight"
+            oninput="updateBackground(this)"
+          />
+          <label for="font-size">Font weight</label>
+          <output
+            for="font-size"
+            onforminput="value=font-size.valueAsNumber;"
+          ></output>
+        </div>
+        <div>
+          <input
+            id="color"
+            type="color"
+            data-type="text_color"
+            oninput="updateBackground(this)"
+          />
+          <label for="color">Font Color</label>
+        </div>
+        <div>
+          <input
+            id="color"
+            type="color"
+            data-type="bg_color"
+            value="#ffffff"
+            oninput="updateBackground(this)"
+          />
+          <label for="color">Background Color</label>
+        </div>
+
+        <!-- Bitter
+    Cormorant Garamond
+    Merriweather
+    Source Serif Pro
+    Zilla Slab -->
       </div>
       <div class="tg-output-box">
         <div class="tg-output-text">
