@@ -27,47 +27,47 @@ body {
   text-transform: uppercase;
 }
 
-.font label {
+.input-box label {
   font-size: 1.8rem;
 }
 
-.font label[for="Inter"] {
+label[for="Inter"] {
   font-family: "Inter", sans-serif;
 }
 
-.font label[for="Lato"] {
+label[for="Lato"] {
   font-family: "Lato", sans-serif;
 }
 
-.font label[for="Nunito"] {
+label[for="Nunito"] {
   font-family: "Nunito", sans-serif;
 }
 
-.font label[for="Open Sans"] {
+label[for="Open Sans"] {
   font-family: "Open Sans", sans-serif;
 }
 
-.font label[for="Roboto"] {
+label[for="Roboto"] {
   font-family: "Roboto", sans-serif;
 }
 
-.font label[for="Bitter"] {
+label[for="Bitter"] {
   font-family: "Bitter", serif;
 }
 
-.font label[for="Cormorant Garamond"] {
+label[for="Cormorant Garamond"] {
   font-family: "Cormorant Garamond", serif;
 }
 
-.font label[for="Merriweather"] {
+label[for="Merriweather"] {
   font-family: "Merriweather", serif;
 }
 
-.font label[for="Source Serif Pro"] {
+label[for="Source Serif Pro"] {
   font-family: "Source Serif Pro", serif;
 }
 
-.font label[for="Zilla Slab"] {
+label[for="Zilla Slab"] {
   font-family: "Zilla Slab", serif;
 }
 
@@ -77,6 +77,7 @@ body {
   --font_size: 1.8rem;
   --font_weight: 400;
   --bg_color: #fff;
+  --line_height: 1;
 }
 
 .output-text {
@@ -87,4 +88,14 @@ body {
   font-weight: var(--font_weight);
   color: var(--text_color);
   background-color: var(--bg_color);
+  line-height: var(--line_height);
+}
+
+/* div input {
+  margin-bottom: 3.2rem;
+} */
+
+.input-box {
+  display: flex;
+  gap: 1.2rem;
 }

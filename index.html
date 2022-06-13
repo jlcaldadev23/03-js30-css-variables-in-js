@@ -31,7 +31,7 @@
       <div class="tg-input-box">
         <fieldset class="tg-fonts">
           <legend>sans-serif fonts</legend>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -42,7 +42,7 @@
             />
             <label for="Inter">Inter</label>
           </div>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -52,7 +52,7 @@
             />
             <label for="Lato">Lato</label>
           </div>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -62,7 +62,7 @@
             />
             <label for="Nunito">Nunito</label>
           </div>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -72,7 +72,7 @@
             />
             <label for="Open Sans">Open Sans</label>
           </div>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -84,7 +84,7 @@
           </div>
 
           <legend>serif fonts</legend>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -94,7 +94,7 @@
             />
             <label for="Bitter">Bitter</label>
           </div>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -114,7 +114,7 @@
             />
             <label for="Merriweather">Merriweather</label>
           </div>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -124,7 +124,7 @@
             />
             <label for="Source Serif Pro">Source Serif Pro</label>
           </div>
-          <div class="font">
+          <div class="input-box">
             <input
               type="radio"
               name="font"
@@ -135,7 +135,7 @@
             <label for="Zilla Slab">Zilla Slab</label>
           </div>
         </fieldset>
-        <div>
+        <div class="input-box">
           <input
             name="font-size"
             id="font-size"
@@ -143,30 +143,40 @@
             min="8"
             max="96"
             step="4"
+            value="16"
             data-unit="px"
             data-type="font_size"
             oninput="updateBackground(this)"
           />
           <label for="font-size">Font size</label>
         </div>
-        <div>
+        <div class="input-box">
           <input
             name="font-weight"
             id="font-weight"
             type="range"
             min="300"
             max="700"
+            value="400"
             step="100"
             data-type="font_weight"
             oninput="updateBackground(this)"
           />
-          <label for="font-size">Font weight</label>
-          <output
-            for="font-size"
-            onforminput="value=font-size.valueAsNumber;"
-          ></output>
+          <label for="font-weight">Font weight</label>
         </div>
-        <div>
+        <div class="input-box">
+          <input
+            id="line-height"
+            type="range"
+            min="0.5"
+            max="3"
+            step="0.1"
+            data-type="line_height"
+            oninput="updateBackground(this)"
+          />
+          <label for="line-height">Line height</label>
+        </div>
+        <div class="input-box">
           <input
             id="color"
             type="color"
@@ -175,15 +185,15 @@
           />
           <label for="color">Font Color</label>
         </div>
-        <div>
+        <div class="input-box">
           <input
-            id="color"
+            id="bg-color"
             type="color"
             data-type="bg_color"
             value="#ffffff"
             oninput="updateBackground(this)"
           />
-          <label for="color">Background Color</label>
+          <label for="bg-color">Background Color</label>
         </div>
 
         <!-- Bitter

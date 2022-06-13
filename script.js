@@ -47,10 +47,10 @@ inputs.forEach((input) => {
 // });
 
 function updateBackground(e) {
-  console.log(e.type);
-  if ((e.type = "color")) {
-    console.log(e.value);
-  }
+  // console.log(e.type);
+  // if ((e.type = "color")) {
+  //   console.log(e.value);
+  // }
 
   const unit = e.dataset.unit || "";
   const type = e.dataset.type;
